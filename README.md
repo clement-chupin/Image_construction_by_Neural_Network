@@ -1,5 +1,8 @@
 # Signal Approximation by neural network
 
+Full code :
+https://github.com/clement-chupin/Image_construction_by_Neural_Network/blob/main/main_image_reconstruction_CHUPIN.ipynb
+
 We will reproduce some experiment of the paper "Implicit Neural Representations with Periodic Activation Functions" (Sitzmann, Martel et al.)
 https://www.vincentsitzmann.com/siren/
 
