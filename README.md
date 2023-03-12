@@ -19,64 +19,13 @@ The extraction :
 
 
 
-```python
-layer = fourier_extract_full(1,4).to(device)
-
-input_x = torch.arange(0,100)/100
-input_x = input_x.view(1,-1,1).to(device)
-print(input_x.shape)
-output_y = layer(input_x).cpu()
-plt.title("Fourier feature extraction visualization")
-plt.plot(output_y[0].detach().numpy())
-```
-
-    torch.Size([1, 100, 1])
 
 
-
-
-
-    [<matplotlib.lines.Line2D at 0x7f6cc1577e80>,
-     <matplotlib.lines.Line2D at 0x7f6cc1577ee0>,
-     <matplotlib.lines.Line2D at 0x7f6cc1577f10>,
-     <matplotlib.lines.Line2D at 0x7f6cc1586040>,
-     <matplotlib.lines.Line2D at 0x7f6cc1586130>]
-
-
-
-
-    
 ![png](main_image_reconstruction_CHUPIN_files/main_image_reconstruction_CHUPIN_4_2.png)
     
 
 
 
-```python
-layer = SineLayer(1,4).to(device)
-
-input_x = torch.arange(0,100)/100
-input_x = input_x.view(1,-1,1).to(device)
-print(input_x.shape)
-output_y = layer(input_x).cpu()
-plt.title("Siren extraction visualization")
-plt.plot(output_y[0].detach().numpy())
-```
-
-    torch.Size([1, 100, 1])
-
-
-
-
-
-    [<matplotlib.lines.Line2D at 0x7f6cc1495430>,
-     <matplotlib.lines.Line2D at 0x7f6cc1495490>,
-     <matplotlib.lines.Line2D at 0x7f6cc14954c0>,
-     <matplotlib.lines.Line2D at 0x7f6cc14955b0>]
-
-
-
-
-    
 ![png](main_image_reconstruction_CHUPIN_files/main_image_reconstruction_CHUPIN_5_2.png)
     
 
