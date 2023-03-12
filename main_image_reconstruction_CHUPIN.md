@@ -354,14 +354,14 @@ plt.plot(output_y[0])
 
 
 
-    [<matplotlib.lines.Line2D at 0x7f460c200970>,
-     <matplotlib.lines.Line2D at 0x7f460c2009d0>,
-     <matplotlib.lines.Line2D at 0x7f460c200a00>,
-     <matplotlib.lines.Line2D at 0x7f460c200b20>,
-     <matplotlib.lines.Line2D at 0x7f460c200c10>,
-     <matplotlib.lines.Line2D at 0x7f460c200d00>,
-     <matplotlib.lines.Line2D at 0x7f460c200df0>,
-     <matplotlib.lines.Line2D at 0x7f460c200ee0>]
+    [<matplotlib.lines.Line2D at 0x7f6cc4227940>,
+     <matplotlib.lines.Line2D at 0x7f6cc42279a0>,
+     <matplotlib.lines.Line2D at 0x7f6cc42279d0>,
+     <matplotlib.lines.Line2D at 0x7f6cc4227af0>,
+     <matplotlib.lines.Line2D at 0x7f6cc4227be0>,
+     <matplotlib.lines.Line2D at 0x7f6cc4227cd0>,
+     <matplotlib.lines.Line2D at 0x7f6cc4227dc0>,
+     <matplotlib.lines.Line2D at 0x7f6cc4227eb0>]
 
 
 
@@ -389,11 +389,11 @@ plt.plot(output_y[0].detach().numpy())
 
 
 
-    [<matplotlib.lines.Line2D at 0x7f460c1350a0>,
-     <matplotlib.lines.Line2D at 0x7f460c135100>,
-     <matplotlib.lines.Line2D at 0x7f460c135130>,
-     <matplotlib.lines.Line2D at 0x7f460c135220>,
-     <matplotlib.lines.Line2D at 0x7f460c135310>]
+    [<matplotlib.lines.Line2D at 0x7f6cc1577e80>,
+     <matplotlib.lines.Line2D at 0x7f6cc1577ee0>,
+     <matplotlib.lines.Line2D at 0x7f6cc1577f10>,
+     <matplotlib.lines.Line2D at 0x7f6cc1586040>,
+     <matplotlib.lines.Line2D at 0x7f6cc1586130>]
 
 
 
@@ -421,10 +421,10 @@ plt.plot(output_y[0].detach().numpy())
 
 
 
-    [<matplotlib.lines.Line2D at 0x7f460c0433d0>,
-     <matplotlib.lines.Line2D at 0x7f460c043430>,
-     <matplotlib.lines.Line2D at 0x7f460c043460>,
-     <matplotlib.lines.Line2D at 0x7f460c043550>]
+    [<matplotlib.lines.Line2D at 0x7f6cc1495430>,
+     <matplotlib.lines.Line2D at 0x7f6cc1495490>,
+     <matplotlib.lines.Line2D at 0x7f6cc14954c0>,
+     <matplotlib.lines.Line2D at 0x7f6cc14955b0>]
 
 
 
@@ -501,18 +501,18 @@ reconstruct_image(model,1,"SimpleMlp Image Reconstruct")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.341 
-    Epoch: 2, Loss_train: 0.029 
-    Epoch: 3, Loss_train: 0.027 
-    Epoch: 4, Loss_train: 0.025 
-    Epoch: 5, Loss_train: 0.025 
-    Epoch: 6, Loss_train: 0.025 
-    Epoch: 7, Loss_train: 0.023 
-    Epoch: 8, Loss_train: 0.020 
-    Epoch: 9, Loss_train: 0.021 
-    Epoch: 10, Loss_train: 0.018 
-    Finished with a loss for 100 last loss :  0.01764439
-    Finished with a loss for 50 last loss :  0.017491633
+    Epoch: 1, Loss_train: 0.375 
+    Epoch: 2, Loss_train: 0.028 
+    Epoch: 3, Loss_train: 0.025 
+    Epoch: 4, Loss_train: 0.023 
+    Epoch: 5, Loss_train: 0.022 
+    Epoch: 6, Loss_train: 0.020 
+    Epoch: 7, Loss_train: 0.018 
+    Epoch: 8, Loss_train: 0.019 
+    Epoch: 9, Loss_train: 0.017 
+    Epoch: 10, Loss_train: 0.015 
+    Finished with a loss for 100 last loss :  0.014891304
+    Finished with a loss for 50 last loss :  0.014766498
     simple_mlp(
       (fc_1): Linear(in_features=2, out_features=64, bias=True)
       (fc_2): Linear(in_features=64, out_features=64, bias=True)
@@ -540,18 +540,18 @@ reconstruct_image(model,2,"FourierMlp Reconstruct")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.323 
+    Epoch: 1, Loss_train: 0.281 
     Epoch: 2, Loss_train: 0.009 
     Epoch: 3, Loss_train: 0.008 
     Epoch: 4, Loss_train: 0.006 
     Epoch: 5, Loss_train: 0.005 
     Epoch: 6, Loss_train: 0.005 
     Epoch: 7, Loss_train: 0.005 
-    Epoch: 8, Loss_train: 0.003 
+    Epoch: 8, Loss_train: 0.004 
     Epoch: 9, Loss_train: 0.004 
     Epoch: 10, Loss_train: 0.004 
-    Finished with a loss for 100 last loss :  0.0036257422
-    Finished with a loss for 50 last loss :  0.0036042777
+    Finished with a loss for 100 last loss :  0.0036816054
+    Finished with a loss for 50 last loss :  0.003639353
     fourier_mlp(
       (fourier_1): fourier_extract_full(in_features=2, out_features=81, bias=True)
       (fc_2): Linear(in_features=81, out_features=64, bias=True)
@@ -580,18 +580,18 @@ reconstruct_image(model,4,"SirenMlp Reconstruct")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.258 
+    Epoch: 1, Loss_train: 0.283 
     Epoch: 2, Loss_train: 0.007 
     Epoch: 3, Loss_train: 0.006 
-    Epoch: 4, Loss_train: 0.006 
-    Epoch: 5, Loss_train: 0.005 
-    Epoch: 6, Loss_train: 0.004 
-    Epoch: 7, Loss_train: 0.006 
+    Epoch: 4, Loss_train: 0.007 
+    Epoch: 5, Loss_train: 0.006 
+    Epoch: 6, Loss_train: 0.005 
+    Epoch: 7, Loss_train: 0.004 
     Epoch: 8, Loss_train: 0.005 
     Epoch: 9, Loss_train: 0.005 
     Epoch: 10, Loss_train: 0.005 
-    Finished with a loss for 100 last loss :  0.0047893906
-    Finished with a loss for 50 last loss :  0.0048426916
+    Finished with a loss for 100 last loss :  0.0047096624
+    Finished with a loss for 50 last loss :  0.00461373
     siren_mlp(
       (siren_r): Siren(
         (net): Sequential(
@@ -650,18 +650,18 @@ print(model)
 
 ```
 
-    Epoch: 1, Loss_train: 0.284 
-    Epoch: 2, Loss_train: 0.022 
-    Epoch: 3, Loss_train: 0.020 
-    Epoch: 4, Loss_train: 0.017 
-    Epoch: 5, Loss_train: 0.016 
+    Epoch: 1, Loss_train: 0.304 
+    Epoch: 2, Loss_train: 0.020 
+    Epoch: 3, Loss_train: 0.018 
+    Epoch: 4, Loss_train: 0.016 
+    Epoch: 5, Loss_train: 0.014 
     Epoch: 6, Loss_train: 0.014 
-    Epoch: 7, Loss_train: 0.013 
-    Epoch: 8, Loss_train: 0.011 
+    Epoch: 7, Loss_train: 0.014 
+    Epoch: 8, Loss_train: 0.012 
     Epoch: 9, Loss_train: 0.012 
-    Epoch: 10, Loss_train: 0.011 
-    Finished with a loss for 100 last loss :  0.011186038
-    Finished with a loss for 50 last loss :  0.011115678
+    Epoch: 10, Loss_train: 0.013 
+    Finished with a loss for 100 last loss :  0.011705444
+    Finished with a loss for 50 last loss :  0.011567899
     triangular_mlp(
       (triangular_extraction): triangular_features_extraction(in_features=2, out_features=16, bias=True)
       (fc_1): Linear(in_features=16, out_features=64, bias=True)
@@ -987,18 +987,18 @@ reconstruct_Helmholtz(model,index=1,title="SimpleMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.489 
-    Epoch: 51, Loss_train: 0.348 
-    Epoch: 101, Loss_train: 0.229 
-    Epoch: 151, Loss_train: 0.160 
-    Epoch: 201, Loss_train: 0.111 
-    Epoch: 251, Loss_train: 0.101 
-    Epoch: 301, Loss_train: 0.082 
-    Epoch: 351, Loss_train: 0.074 
-    Epoch: 401, Loss_train: 0.047 
-    Epoch: 451, Loss_train: 0.050 
-    Finished with a loss for 100 last loss :  0.03882
-    Finished with a loss for 50 last loss :  0.038439568
+    Epoch: 1, Loss_train: 0.490 
+    Epoch: 51, Loss_train: 0.373 
+    Epoch: 101, Loss_train: 0.232 
+    Epoch: 151, Loss_train: 0.107 
+    Epoch: 201, Loss_train: 0.065 
+    Epoch: 251, Loss_train: 0.042 
+    Epoch: 301, Loss_train: 0.034 
+    Epoch: 351, Loss_train: 0.030 
+    Epoch: 401, Loss_train: 0.026 
+    Epoch: 451, Loss_train: 0.023 
+    Finished with a loss for 100 last loss :  0.023761917
+    Finished with a loss for 50 last loss :  0.023563698
     simple_mlp_Helmholtz(
       (fc_1): Linear(in_features=2, out_features=32, bias=True)
       (fc_2): Linear(in_features=32, out_features=32, bias=True)
@@ -1026,18 +1026,18 @@ reconstruct_Helmholtz(model,index=1,title="SirenFakeMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.517 
-    Epoch: 51, Loss_train: 0.489 
-    Epoch: 101, Loss_train: 0.481 
-    Epoch: 151, Loss_train: 0.460 
-    Epoch: 201, Loss_train: 0.494 
-    Epoch: 251, Loss_train: 0.450 
-    Epoch: 301, Loss_train: 0.465 
-    Epoch: 351, Loss_train: 0.478 
-    Epoch: 401, Loss_train: 0.477 
-    Epoch: 451, Loss_train: 0.446 
-    Finished with a loss for 100 last loss :  0.41039258
-    Finished with a loss for 50 last loss :  0.40893042
+    Epoch: 1, Loss_train: 0.527 
+    Epoch: 51, Loss_train: 0.497 
+    Epoch: 101, Loss_train: 0.475 
+    Epoch: 151, Loss_train: 0.478 
+    Epoch: 201, Loss_train: 0.498 
+    Epoch: 251, Loss_train: 0.452 
+    Epoch: 301, Loss_train: 0.479 
+    Epoch: 351, Loss_train: 0.460 
+    Epoch: 401, Loss_train: 0.432 
+    Epoch: 451, Loss_train: 0.370 
+    Finished with a loss for 100 last loss :  0.32091698
+    Finished with a loss for 50 last loss :  0.31662843
     siren_fake_mlp_Helmholtz(
       (fc_1): Linear(in_features=2, out_features=32, bias=True)
       (fc_2): Linear(in_features=32, out_features=32, bias=True)
@@ -1066,7 +1066,7 @@ reconstruct_Helmholtz(model,index=2,title="FourierMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.589 
+    Epoch: 1, Loss_train: 0.509 
     Epoch: 51, Loss_train: 0.001 
     Epoch: 101, Loss_train: 0.001 
     Epoch: 151, Loss_train: 0.000 
@@ -1076,8 +1076,8 @@ print(model)
     Epoch: 351, Loss_train: 0.000 
     Epoch: 401, Loss_train: 0.000 
     Epoch: 451, Loss_train: 0.000 
-    Finished with a loss for 100 last loss :  0.00026814052
-    Finished with a loss for 50 last loss :  0.00026567047
+    Finished with a loss for 100 last loss :  0.00023157937
+    Finished with a loss for 50 last loss :  0.00023680594
     fourier_mlp_Helmholtz(
       (fourier_1): fourier_extract_full(in_features=2, out_features=81, bias=True)
       (fc_2): Linear(in_features=81, out_features=32, bias=True)
@@ -1105,18 +1105,18 @@ reconstruct_Helmholtz(model,index=4,title="SirenMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.628 
-    Epoch: 51, Loss_train: 0.000 
-    Epoch: 101, Loss_train: 0.000 
-    Epoch: 151, Loss_train: 0.000 
-    Epoch: 201, Loss_train: 0.000 
+    Epoch: 1, Loss_train: 1.144 
+    Epoch: 51, Loss_train: 0.002 
+    Epoch: 101, Loss_train: 0.001 
+    Epoch: 151, Loss_train: 0.002 
+    Epoch: 201, Loss_train: 0.003 
     Epoch: 251, Loss_train: 0.001 
-    Epoch: 301, Loss_train: 0.000 
-    Epoch: 351, Loss_train: 0.000 
+    Epoch: 301, Loss_train: 0.001 
+    Epoch: 351, Loss_train: 0.001 
     Epoch: 401, Loss_train: 0.001 
     Epoch: 451, Loss_train: 0.001 
-    Finished with a loss for 100 last loss :  0.0005453754
-    Finished with a loss for 50 last loss :  0.0005491516
+    Finished with a loss for 100 last loss :  0.0010300127
+    Finished with a loss for 50 last loss :  0.0010263402
     siren_mlp_Helmholtz(
       (siren): Siren(
         (net): Sequential(
@@ -1154,18 +1154,18 @@ reconstruct_Helmholtz(model,index=5,title="TriangularMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.570 
-    Epoch: 51, Loss_train: 0.163 
-    Epoch: 101, Loss_train: 0.034 
-    Epoch: 151, Loss_train: 0.021 
-    Epoch: 201, Loss_train: 0.014 
-    Epoch: 251, Loss_train: 0.010 
-    Epoch: 301, Loss_train: 0.009 
-    Epoch: 351, Loss_train: 0.007 
-    Epoch: 401, Loss_train: 0.006 
-    Epoch: 451, Loss_train: 0.006 
-    Finished with a loss for 100 last loss :  0.006258954
-    Finished with a loss for 50 last loss :  0.006262303
+    Epoch: 1, Loss_train: 0.502 
+    Epoch: 51, Loss_train: 0.109 
+    Epoch: 101, Loss_train: 0.021 
+    Epoch: 151, Loss_train: 0.011 
+    Epoch: 201, Loss_train: 0.008 
+    Epoch: 251, Loss_train: 0.008 
+    Epoch: 301, Loss_train: 0.006 
+    Epoch: 351, Loss_train: 0.006 
+    Epoch: 401, Loss_train: 0.005 
+    Epoch: 451, Loss_train: 0.005 
+    Finished with a loss for 100 last loss :  0.0049856286
+    Finished with a loss for 50 last loss :  0.004961751
     triangular_mlp_Helmholtz(
       (input_decompo): triangular_features_extraction(in_features=2, out_features=16, bias=True)
       (fc_1): Linear(in_features=16, out_features=32, bias=True)
@@ -1208,18 +1208,18 @@ reconstruct_Helmholtz(model,index=1,title="SimpleMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.506 
-    Epoch: 51, Loss_train: 0.488 
-    Epoch: 101, Loss_train: 0.508 
-    Epoch: 151, Loss_train: 0.482 
-    Epoch: 201, Loss_train: 0.476 
-    Epoch: 251, Loss_train: 0.479 
-    Epoch: 301, Loss_train: 0.473 
-    Epoch: 351, Loss_train: 0.476 
-    Epoch: 401, Loss_train: 0.467 
-    Epoch: 451, Loss_train: 0.468 
-    Finished with a loss for 100 last loss :  0.4520892
-    Finished with a loss for 50 last loss :  0.4520489
+    Epoch: 1, Loss_train: 0.565 
+    Epoch: 51, Loss_train: 0.532 
+    Epoch: 101, Loss_train: 0.494 
+    Epoch: 151, Loss_train: 0.498 
+    Epoch: 201, Loss_train: 0.496 
+    Epoch: 251, Loss_train: 0.490 
+    Epoch: 301, Loss_train: 0.501 
+    Epoch: 351, Loss_train: 0.490 
+    Epoch: 401, Loss_train: 0.499 
+    Epoch: 451, Loss_train: 0.475 
+    Finished with a loss for 100 last loss :  0.48520267
+    Finished with a loss for 50 last loss :  0.4854953
     simple_mlp_Helmholtz(
       (fc_1): Linear(in_features=2, out_features=32, bias=True)
       (fc_2): Linear(in_features=32, out_features=32, bias=True)
@@ -1247,18 +1247,18 @@ reconstruct_Helmholtz(model,index=2,title="FourierMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.536 
-    Epoch: 51, Loss_train: 0.018 
+    Epoch: 1, Loss_train: 0.515 
+    Epoch: 51, Loss_train: 0.016 
     Epoch: 101, Loss_train: 0.006 
-    Epoch: 151, Loss_train: 0.005 
+    Epoch: 151, Loss_train: 0.006 
     Epoch: 201, Loss_train: 0.004 
     Epoch: 251, Loss_train: 0.004 
     Epoch: 301, Loss_train: 0.004 
     Epoch: 351, Loss_train: 0.003 
     Epoch: 401, Loss_train: 0.003 
     Epoch: 451, Loss_train: 0.003 
-    Finished with a loss for 100 last loss :  0.003150604
-    Finished with a loss for 50 last loss :  0.003149257
+    Finished with a loss for 100 last loss :  0.0035549884
+    Finished with a loss for 50 last loss :  0.0035740403
     fourier_mlp_Helmholtz(
       (fourier_1): fourier_extract_full(in_features=2, out_features=81, bias=True)
       (fc_2): Linear(in_features=81, out_features=32, bias=True)
@@ -1286,18 +1286,18 @@ reconstruct_Helmholtz(model,index=4,title="SirenMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 1.106 
-    Epoch: 51, Loss_train: 0.078 
-    Epoch: 101, Loss_train: 0.062 
-    Epoch: 151, Loss_train: 0.056 
-    Epoch: 201, Loss_train: 0.065 
-    Epoch: 251, Loss_train: 0.062 
-    Epoch: 301, Loss_train: 0.073 
-    Epoch: 351, Loss_train: 0.067 
-    Epoch: 401, Loss_train: 0.052 
-    Epoch: 451, Loss_train: 0.064 
-    Finished with a loss for 100 last loss :  0.063502766
-    Finished with a loss for 50 last loss :  0.06339061
+    Epoch: 1, Loss_train: 0.986 
+    Epoch: 51, Loss_train: 0.029 
+    Epoch: 101, Loss_train: 0.019 
+    Epoch: 151, Loss_train: 0.019 
+    Epoch: 201, Loss_train: 0.015 
+    Epoch: 251, Loss_train: 0.022 
+    Epoch: 301, Loss_train: 0.019 
+    Epoch: 351, Loss_train: 0.022 
+    Epoch: 401, Loss_train: 0.015 
+    Epoch: 451, Loss_train: 0.027 
+    Finished with a loss for 100 last loss :  0.020570038
+    Finished with a loss for 50 last loss :  0.020684015
     siren_mlp_Helmholtz(
       (siren): Siren(
         (net): Sequential(
@@ -1335,18 +1335,18 @@ reconstruct_Helmholtz(model,index=5,title="TriangularMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.502 
-    Epoch: 51, Loss_train: 0.479 
-    Epoch: 101, Loss_train: 0.500 
-    Epoch: 151, Loss_train: 0.478 
-    Epoch: 201, Loss_train: 0.462 
-    Epoch: 251, Loss_train: 0.480 
-    Epoch: 301, Loss_train: 0.462 
-    Epoch: 351, Loss_train: 0.434 
-    Epoch: 401, Loss_train: 0.435 
-    Epoch: 451, Loss_train: 0.432 
-    Finished with a loss for 100 last loss :  0.42112887
-    Finished with a loss for 50 last loss :  0.42075577
+    Epoch: 1, Loss_train: 0.530 
+    Epoch: 51, Loss_train: 0.502 
+    Epoch: 101, Loss_train: 0.497 
+    Epoch: 151, Loss_train: 0.476 
+    Epoch: 201, Loss_train: 0.444 
+    Epoch: 251, Loss_train: 0.465 
+    Epoch: 301, Loss_train: 0.439 
+    Epoch: 351, Loss_train: 0.417 
+    Epoch: 401, Loss_train: 0.417 
+    Epoch: 451, Loss_train: 0.409 
+    Finished with a loss for 100 last loss :  0.39978424
+    Finished with a loss for 50 last loss :  0.40015367
     triangular_mlp_Helmholtz(
       (input_decompo): triangular_features_extraction(in_features=2, out_features=16, bias=True)
       (fc_1): Linear(in_features=16, out_features=32, bias=True)
@@ -1394,18 +1394,18 @@ reconstruct_Helmholtz(model,index=1,title="SimpleMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.548 
-    Epoch: 51, Loss_train: 0.351 
-    Epoch: 101, Loss_train: 0.294 
-    Epoch: 151, Loss_train: 0.269 
-    Epoch: 201, Loss_train: 0.252 
-    Epoch: 251, Loss_train: 0.235 
-    Epoch: 301, Loss_train: 0.219 
-    Epoch: 351, Loss_train: 0.202 
-    Epoch: 401, Loss_train: 0.196 
-    Epoch: 451, Loss_train: 0.190 
-    Finished with a loss for 100 last loss :  0.1884468
-    Finished with a loss for 50 last loss :  0.18885763
+    Epoch: 1, Loss_train: 0.508 
+    Epoch: 51, Loss_train: 0.313 
+    Epoch: 101, Loss_train: 0.262 
+    Epoch: 151, Loss_train: 0.250 
+    Epoch: 201, Loss_train: 0.203 
+    Epoch: 251, Loss_train: 0.203 
+    Epoch: 301, Loss_train: 0.177 
+    Epoch: 351, Loss_train: 0.188 
+    Epoch: 401, Loss_train: 0.166 
+    Epoch: 451, Loss_train: 0.165 
+    Finished with a loss for 100 last loss :  0.16602142
+    Finished with a loss for 50 last loss :  0.16555744
     simple_mlp_Helmholtz(
       (fc_1): Linear(in_features=2, out_features=32, bias=True)
       (fc_2): Linear(in_features=32, out_features=32, bias=True)
@@ -1433,18 +1433,18 @@ reconstruct_Helmholtz(model,index=2,title="FourierMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.518 
-    Epoch: 51, Loss_train: 0.047 
-    Epoch: 101, Loss_train: 0.043 
-    Epoch: 151, Loss_train: 0.043 
-    Epoch: 201, Loss_train: 0.043 
-    Epoch: 251, Loss_train: 0.038 
-    Epoch: 301, Loss_train: 0.041 
-    Epoch: 351, Loss_train: 0.036 
-    Epoch: 401, Loss_train: 0.038 
-    Epoch: 451, Loss_train: 0.040 
-    Finished with a loss for 100 last loss :  0.03908852
-    Finished with a loss for 50 last loss :  0.039071873
+    Epoch: 1, Loss_train: 0.519 
+    Epoch: 51, Loss_train: 0.043 
+    Epoch: 101, Loss_train: 0.045 
+    Epoch: 151, Loss_train: 0.037 
+    Epoch: 201, Loss_train: 0.041 
+    Epoch: 251, Loss_train: 0.040 
+    Epoch: 301, Loss_train: 0.038 
+    Epoch: 351, Loss_train: 0.037 
+    Epoch: 401, Loss_train: 0.042 
+    Epoch: 451, Loss_train: 0.036 
+    Finished with a loss for 100 last loss :  0.03886108
+    Finished with a loss for 50 last loss :  0.038700297
     fourier_mlp_Helmholtz(
       (fourier_1): fourier_extract_full(in_features=2, out_features=81, bias=True)
       (fc_2): Linear(in_features=81, out_features=32, bias=True)
@@ -1472,18 +1472,18 @@ reconstruct_Helmholtz(model,index=4,title="SirenMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.981 
-    Epoch: 51, Loss_train: 0.057 
-    Epoch: 101, Loss_train: 0.058 
-    Epoch: 151, Loss_train: 0.070 
-    Epoch: 201, Loss_train: 0.074 
-    Epoch: 251, Loss_train: 0.060 
-    Epoch: 301, Loss_train: 0.066 
-    Epoch: 351, Loss_train: 0.063 
-    Epoch: 401, Loss_train: 0.062 
-    Epoch: 451, Loss_train: 0.061 
-    Finished with a loss for 100 last loss :  0.06493302
-    Finished with a loss for 50 last loss :  0.06472316
+    Epoch: 1, Loss_train: 0.938 
+    Epoch: 51, Loss_train: 0.044 
+    Epoch: 101, Loss_train: 0.042 
+    Epoch: 151, Loss_train: 0.043 
+    Epoch: 201, Loss_train: 0.040 
+    Epoch: 251, Loss_train: 0.040 
+    Epoch: 301, Loss_train: 0.040 
+    Epoch: 351, Loss_train: 0.045 
+    Epoch: 401, Loss_train: 0.044 
+    Epoch: 451, Loss_train: 0.041 
+    Finished with a loss for 100 last loss :  0.044641916
+    Finished with a loss for 50 last loss :  0.044657227
     siren_mlp_Helmholtz(
       (siren): Siren(
         (net): Sequential(
@@ -1521,18 +1521,18 @@ reconstruct_Helmholtz(model,index=5,title="TriangularMLP Sinus Reconstruction")
 print(model)
 ```
 
-    Epoch: 1, Loss_train: 0.484 
-    Epoch: 51, Loss_train: 0.339 
-    Epoch: 101, Loss_train: 0.257 
-    Epoch: 151, Loss_train: 0.261 
-    Epoch: 201, Loss_train: 0.218 
-    Epoch: 251, Loss_train: 0.204 
-    Epoch: 301, Loss_train: 0.207 
-    Epoch: 351, Loss_train: 0.203 
-    Epoch: 401, Loss_train: 0.180 
-    Epoch: 451, Loss_train: 0.187 
-    Finished with a loss for 100 last loss :  0.18025707
-    Finished with a loss for 50 last loss :  0.17975438
+    Epoch: 1, Loss_train: 0.496 
+    Epoch: 51, Loss_train: 0.334 
+    Epoch: 101, Loss_train: 0.277 
+    Epoch: 151, Loss_train: 0.258 
+    Epoch: 201, Loss_train: 0.226 
+    Epoch: 251, Loss_train: 0.214 
+    Epoch: 301, Loss_train: 0.196 
+    Epoch: 351, Loss_train: 0.193 
+    Epoch: 401, Loss_train: 0.185 
+    Epoch: 451, Loss_train: 0.185 
+    Finished with a loss for 100 last loss :  0.17553586
+    Finished with a loss for 50 last loss :  0.17520744
     triangular_mlp_Helmholtz(
       (input_decompo): triangular_features_extraction(in_features=2, out_features=16, bias=True)
       (fc_1): Linear(in_features=16, out_features=32, bias=True)
